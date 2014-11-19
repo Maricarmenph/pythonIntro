@@ -1,3 +1,4 @@
+# Bragging Rights: Samaritan 2014 (timer)
 # This is a very simple program made by pure python
 # Its mission is to find open ports on a network and report the results back to us
 # Let's get started!
@@ -11,3 +12,5 @@
 # instance of a new socket. It also has the option of taking the timeout and source address.
 
 import optparse
+parser = optparse.OptionParser('usage %prog -H' +\ '<target host> -p <target port>')
+parser.add_option('-H', dest='tghost', type='string', \help='specify target host')
